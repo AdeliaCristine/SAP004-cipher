@@ -7,8 +7,45 @@
   </head>
   <body>
     <div id="root">
-      <h1>Hello world!</h1>
+      <img src="msg1.png" width="50%" height="50%" id="img">
     </div>
+    <div>
+      <form id="formulario">
+        <div>
+          <label for="offset"class="texto">Qual a sua senha?</label>
+          <input type="number" id="offset"  min="0" max="999" oninput="validity.valid||(value='');">
+        </div>
+        <div>
+          <label for="string" class="texto">Digite sua mensagem.</label>
+          <div>
+          <input type="text" id="msgentrada" class="msgR">
+          <div>
+            <button type="submit" value="cifrar" class="bt" id="encode">Cifrar</button>
+            <button type="submit" value="decifrar" class="bt" id="decode">Decifrar</button>
+            </div>
+          </div>
+         
+          
+        </div>
+        <div>
+          <label for="msgsaida" class="texto">Aqui está sua mensagem.</label>
+          <div>
+            <input type="text" id="msgsaida" class="msgR">
+          </div>
+          <div>
+            <button type="submit" value="limpar"class="bt" id="limpar">Limpar</button>
+          </div>
+          
+       <!-- <button type="submit" value="sair" class="bt" id="sair">Sair</button>
+        <button type="submit" value="confirmar"class="bt" id="confirmar">Confirmar</button> -->
+        </div>
+        
+       
+        
+      </form>
+
+    </div>
+
     <script src="index.js" type="module"></script>
   </body>
 </html>

@@ -1,0 +1,38 @@
+body{
+    background-image: url("cyber.jpg"); 
+    text-align: center;
+    background-repeat: no-repeat; /* faz com a imagem não repita, apareça uma única vez. */
+    background-size: cover;  /* pra imagem ficar na tela toda. */
+}
+#formulario{
+    text-align: :center;
+    background-color:rgba(172, 41, 144, 0.342);
+    border: 3px solid white;
+    height:40%;
+    margin: 0px 320px;
+}
+.texto{
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+    vertical-align: middle;
+}
+.bt{
+    color: black;
+    background-color: white;
+    font-size: 20px;
+    font-family: fantasy;
+    text-align: center;
+    padding: 0%;
+    margin: 10px;
+    width:100px;
+    height:40px;
+}
+.msgR{
+    background-color: white;
+    font-size: 20px;
+    color:black;
+    padding: 10px;
+    border: 1px solid white;
+    text-align: center;
+}
