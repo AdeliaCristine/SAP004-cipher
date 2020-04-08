@@ -4,12 +4,14 @@ body{
     background-repeat: no-repeat; /* faz com a imagem não repita, apareça uma única vez. */
     background-size: cover;  /* pra imagem ficar na tela toda. */
 }
+
 #formulario{
     text-align: :center;
     background-color:rgba(172, 41, 144, 0.342);
     border: 3px solid white;
     height:40%;
     margin: 0px 320px;
+    display:block;
 }
 .texto{
     font-size: 20px;
@@ -35,4 +37,18 @@ body{
     padding: 10px;
     border: 1px solid white;
     text-align: center;
+}
+#voltar{
+    display:none;
+    text-align:center;
+}
+#final{
+    display:none;
+    text-align: center;
+    background-color:rgba(172, 41, 144, 0.342);
+    border: 3px solid white;
+    margin: 0px 320px;
+}
+#confirmar{
+    display:none;
 }

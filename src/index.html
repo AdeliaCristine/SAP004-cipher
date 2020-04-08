@@ -12,16 +12,25 @@
     <div>
       <form id="formulario">
         <div>
-          <label for="offset"class="texto">Qual a sua senha?</label>
+          <label for="pessoasCadastradas" class="texto">Para quem será sua mensagem?</label>
+            <select id="pessoasCadastradas">
+            <option value=""></option>
+            <option  id= "1" value="Gabriela">Gabriela</option>
+            <option   id="2" value="Jardel">Jardel</option>
+            <option  id="3"  value="Carla">Carla</option>
+          </select>
+       </div> 
+        <div>
+          <label for="offset" class="texto">Qual a sua senha?</label>
           <input type="number" id="offset"  min="0" max="999" oninput="validity.valid||(value='');">
         </div>
         <div>
-          <label for="string" class="texto">Digite sua mensagem.</label>
+          <label for="msgentrada" class="texto">Digite sua mensagem.</label>
           <div>
           <input type="text" id="msgentrada" class="msgR">
           <div>
-            <button type="submit" value="cifrar" class="bt" id="encode">Cifrar</button>
-            <button type="submit" value="decifrar" class="bt" id="decode">Decifrar</button>
+            <button  value="cifrar" class="bt" id="encode">Cifrar</button>
+            <button  value="decifrar" class="bt" id="decode">Decifrar</button>
             </div>
           </div>
          
@@ -30,19 +39,28 @@
         <div>
           <label for="msgsaida" class="texto">Aqui está sua mensagem.</label>
           <div>
-            <input type="text" id="msgsaida" class="msgR">
+            <textarea id="msgsaida" class="msgR" type ="text"></textarea>
           </div>
           <div>
-            <button type="submit" value="limpar"class="bt" id="limpar">Limpar</button>
+            <button  value="limpar" class="bt" id="limpar">Limpar</button>
           </div>
           
-       <!-- <button type="submit" value="sair" class="bt" id="sair">Sair</button>
-        <button type="submit" value="confirmar"class="bt" id="confirmar">Confirmar</button> -->
+      <!--<button type="button" value="sair" class="bt" id="sair">Sair</button>-->
+      <button type="button" value="confirmar"class="bt" id="confirmar">Confirmar</button>
         </div>
         
        
         
       </form>
+      <div id="final">
+        <p id="suamsg" class="texto"></p>
+        <p id="off" class="texto"></p>
+        <p id="cifrada" class="texto"></p>
+        <p id="decifrada" class="texto"></p>
+      <button type="button" value="voltar"class="bt" id="voltar">Voltar</button>
+
+      </div>
+      
 
     </div>
 
