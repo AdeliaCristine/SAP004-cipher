@@ -9,10 +9,9 @@ document.getElementById("confirmar").addEventListener("click", confirmar );
 
 function encode(event){
   event.preventDefault();
-
+    document.getElementById("confirmar").style.display="block";
     let offset = (document.getElementById("offset").value);
     let string = document.getElementById("msgentrada").value;
-    document.getElementById("confirmar").style.display="block";
     if (offset==="" ||string==="" ){
       alert("Digite uma senha ou uma mensagem válida!");
     }else{
@@ -63,7 +62,7 @@ function confirmar(event){
         document.getElementById("suamsg").innerHTML= "Olá Gabi, voĉe recebeu uma nova mensagem. Copie sua senha e sua mensagem e volte para  página incical para cifra-lá."
         document.getElementById("cifrada").innerHTML= "Sua mensagem é:" + cipher.decode(offset, string);
     } else {
-      document.getElementById("cifrada").innerHTML= "vc n tem msg."
+      document.getElementById("cifrada").innerHTML= "vc"
     }
   }else if (pessoas==jardel){
     document.getElementById("off").innerHTML= "Sua senha é " + offset
@@ -91,4 +90,4 @@ function confirmar(event){
  
 }
 
-   console.log();
+  // console.log();

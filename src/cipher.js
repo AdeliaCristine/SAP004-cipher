@@ -16,10 +16,10 @@ const cipher = {
       //(string.charCodeAt(i)===32) {
         //resultadoCipher += String.fromCharCode(n);
         resultadoCipher += String.fromCharCode(((n-32) % 31)+32);
-      } else if (string.charCodeAt(i)===128 ){
-        resultadoCipher += String.fromCharCode(128);
-      } else if (string.charCodeAt(i)===135 ){
-        resultadoCipher += String.fromCharCode(135);
+      //} else if (string.charCodeAt(i)===128 ){
+        //resultadoCipher += String.fromCharCode(128);
+      //} else if (string.charCodeAt(i)===135 ){
+        //resultadoCipher += String.fromCharCode(135);
       }else {
         resultadoCipher+= String.fromCharCode(n);
       }
@@ -28,9 +28,9 @@ const cipher = {
 },
       
 decode: function(offset, string) {
-  if (offset =="" || string==""||typeof offset!=="number" ||typeof string!=="string"){
-    throw new TypeError('Insira uma senha válida ou confira a mensagem digitada.')
-  }
+ // if (offset =="" || string==""||typeof offset!=="number" ||typeof string!=="string"){
+  //  throw new TypeError('Insira uma senha válida ou confira a mensagem digitada.')
+ // }
   let resultadoCipher="";
   for (let i = 0; i<string.length; i++){
     
@@ -46,10 +46,10 @@ decode: function(offset, string) {
   //(string.charCodeAt(i)===32) {
     //resultadoCipher += String.fromCharCode(n);
     resultadoCipher += String.fromCharCode(((n-32) % 31)+32);
-  } else if (string.charCodeAt(i)===128 ){
-    resultadoCipher += String.fromCharCode(128);
-  } else if (string.charCodeAt(i)===135 ){
-    resultadoCipher += String.fromCharCode(135);
+  //} else if (string.charCodeAt(i)===128 ){
+   // resultadoCipher += String.fromCharCode(128);
+  //} else if (string.charCodeAt(i)===135 ){
+  //  resultadoCipher += String.fromCharCode(135);
   }else {
     resultadoCipher+= String.fromCharCode(n);
   }
