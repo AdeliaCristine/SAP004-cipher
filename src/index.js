@@ -1,7 +1,7 @@
 import cipher from './cipher.js';
 
 
-document.getElementById("encode").addEventListener("click", encode );
+let cifrou=document.getElementById("encode").addEventListener("click", encode );
 document.getElementById("decode").addEventListener("click", decode );
 document.getElementById("limpar").addEventListener("click", limpar );
 document.getElementById("confirmar").addEventListener("click", confirmar );
@@ -12,6 +12,7 @@ function encode(event){
     document.getElementById("confirmar").style.display="block";
     let offset = (document.getElementById("offset").value);
     let string = document.getElementById("msgentrada").value;
+    document.getElementById("confirmar").style.display="block";
     if (offset==="" ||string==="" ){
       alert("Digite uma senha ou uma mensagem válida!");
     }else{
@@ -36,7 +37,6 @@ function limpar(){
    document.getElementById("pessoasCadastradas").value="";    
 }
 
-
 function confirmar(event){
     event.preventDefault();
     document.getElementById("formulario").style.display="none";
@@ -49,45 +49,33 @@ function confirmar(event){
   let offset = parseInt(document.getElementById("offset").value);
   let string = document.getElementById("msgentrada").value;
   document.getElementById("voltar").addEventListener("click",voltar);
-
+  let msgnova = document.getElementById("msgsaida").value;  
  
    if (pessoas===gabi){
          
      document.getElementById("off").innerHTML= "Sua senha é " + offset + "."
+     //let msgnova = document.getElementById("msgsaida").value;    
+      document.getElementById("suamsg").innerHTML= "Olá Gabi, voĉe recebeu uma nova mensagem. Copie sua senha e sua mensagem e volte para página inicial e para cifra-lá ou decifra-ĺá." 
+      document.getElementById("cifrada").innerHTML= "Sua mensagem é:" + msgnova;
       
-      if (encode === true){
-        document.getElementById("suamsg").innerHTML= "Olá Gabi, voĉe recebeu uma nova mensagem. Copie sua senha e sua mensagem e volte para página inicial e para decifra-lá." 
-        document.getElementById("cifrada").innerHTML= "Sua mensagem é:" + cipher.encode(offset, string);
-      } else if(decode === true){
-        document.getElementById("suamsg").innerHTML= "Olá Gabi, voĉe recebeu uma nova mensagem. Copie sua senha e sua mensagem e volte para  página incical para cifra-lá."
-        document.getElementById("cifrada").innerHTML= "Sua mensagem é:" + cipher.decode(offset, string);
-    } else {
-      document.getElementById("cifrada").innerHTML= "vc"
-    }
   }else if (pessoas==jardel){
     document.getElementById("off").innerHTML= "Sua senha é " + offset
-      if (encode === true){
-        document.getElementById("suamsg").innerHTML= "Olá Jardel, voĉe recebeu uma nova mensagem. Copie sua senha e sua mensagem e volte para página inicial e para decifra-lá." 
-        document.getElementById("cifrada").innerHTML= "Sua mensagem é:" + cipher.encode(offset, string);
-    }   else {
-        document.getElementById("suamsg").innerHTML= "Olá Jardel, voĉe recebeu uma nova mensagem. Copie sua senha e sua mensagem e volte para  página incical para cifra-lá."
-        document.getElementById("decifrada").innerHTML= "Sua mensagem é:" + cipher.decode(offset, string);
-    }
+    document.getElementById("suamsg").innerHTML= "Olá Jardel, voĉe recebeu uma nova mensagem. Copie sua senha e sua mensagem e volte para página inicial e para cifra-lá ou decifra-ĺá." 
+    document.getElementById("cifrada").innerHTML= "Sua mensagem é:" + msgnova;
+     
   }else {
     document.getElementById("off").innerHTML= "Sua senha é " + offset
-        if (encode === true){
-        document.getElementById("suamsg").innerHTML= "Olá Carla, voĉe recebeu uma nova mensagem. Copie sua senha e sua mensagem e volte para página inicial e para decifra-lá." 
-        document.getElementById("cifrada").innerHTML= "Sua mensagem é:" + cipher.encode(offset, string);
-      } else {
-        document.getElementById("suamsg").innerHTML= "Olá Carla, voĉe recebeu uma nova mensagem. Copie sua senha e sua mensagem e volte para  página incical para cifra-lá."
-        document.getElementById("decifrada").innerHTML= "Sua mensagem é:" + cipher.decode(offset, string);
-      }
+    document.getElementById("suamsg").innerHTML= "Olá Carla, voĉe recebeu uma nova mensagem. Copie sua senha e sua mensagem e volte para página inicial e para cifra-lá ou decifra-ĺá." 
+    document.getElementById("cifrada").innerHTML= "Sua mensagem é:" + msgnova;  
+    }
   }
   function voltar(){
     document.getElementById("formulario").style.display="block";
     document.getElementById("final").style.display="none";
+    document.getElementById("offset").value="";
+    document.getElementById("msgentrada").value="";
+    
+    document.getElementById("pessoasCadastradas").value=""; 
   }
- 
-}
 
-  // console.log();
+   console.log();
