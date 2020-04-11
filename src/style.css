@@ -1,18 +1,29 @@
 body{
-    background-image: url("cyber.jpg"); 
+    background-image: url("ca.jpeg");
     text-align: center;
     background-repeat: no-repeat; /* faz com a imagem não repita, apareça uma única vez. */
-    background-size: cover;  /* pra imagem ficar na tela toda. */
-}
-
-#formulario{
-    text-align: :center;
-    background-color:rgba(172, 41, 144, 0.342);
-    border: 3px solid white;
-    height:40%;
-    margin: 0px 320px;
+    background-size:cover;  /* pra imagem ficar na tela toda. */
     display:block;
 }
+#formulario{
+    text-align:center;
+    background-color:rgba(105, 160, 233, 0.534);
+    border: 3px solid white;
+    float:right;
+    height:30%;
+    display:block;
+    width: 30%;
+    margin-top: 200px; 
+    margin-right: 100px;
+    margin-bottom: 10px;
+}   
+ #img{
+    float: left;
+    height:30%;
+    margin-top: auto;
+    margin-left:10px;
+    display:block; 
+}   
 .texto{
     font-size: 20px;
     font-style: italic;
@@ -45,10 +56,11 @@ body{
 #final{
     display:none;
     text-align: center;
-    background-color:rgba(172, 41, 144, 0.342);
+    background-color:rgba(105, 160, 233, 0.534);
     border: 3px solid white;
-    margin: 0px 320px;
+    margin: 200px 320px;
 }
 #confirmar{
     display:none;
+
 }

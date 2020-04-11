@@ -7,7 +7,7 @@
   </head>
   <body>
     <div id="root">
-      <img src="msg1.png" width="50%" height="50%" id="img">
+     <img src="msg1.png" width="60%" height="60%" id="img">
     </div>
     <div>
       <p id="vamos"></p>
@@ -23,10 +23,10 @@
        </div> 
         <div>
           <label for="offset" class="texto">Qual a sua senha?</label>
-          <input type="number" id="offset" min="0" max="999" oninput="validity.valid||(value='');">
+          <input type="number" id="offset" min="0" max="999"  required oninput="validity.valid||(value='');">
         </div>
         <div>
-          <label for="msgentrada" class="texto">Digite sua mensagem.</label>
+          <label for="msgentrada" required class="texto">Digite sua mensagem.</label>
           <div>
           <input type="text" id="msgentrada" class="msgR">
           <div>
@@ -45,16 +45,22 @@
           <div>
             <button  value="limpar" class="bt" id="limpar">Limpar</button>
           </div>
-          <button  value="confirmar" class="bt" id="confirmar">Confirmar</button>        
+          <button  value="confirmar" class="bt" id="confirmar">Enviar</button>        
         </div>    
                
       </form>
       <div id="final">
         <p id="suamsg" class="texto"></p>
-        <p id="off" class="texto"></p>
-        <p id="cifrada" class="texto"></p>
-        <p id="decifrada" class="texto"></p>
+        <div>
+          <p id="off" class="texto"></p>
+        </div>
+        <div>
+          <p id="cifrada" class="texto"></p>
+        </div>               
         <button  value="voltar" class="bt" id="voltar">Voltar</button>
+        <div>
+          <p id="decifrada" class="texto"></p>
+        </div>               
       </div>
     </div>
 
