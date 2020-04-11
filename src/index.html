@@ -12,9 +12,9 @@
     <div>
       <p id="vamos"></p>
       <form id="formulario">
-        <div>
+        <div id="box">
           <label for="pessoasCadastradas" class="texto">Para quem será sua mensagem?</label>
-            <select id="pessoasCadastradas">
+            <select id="pessoasCadastradas" class="texto">
               <option value=""></option>
               <option  id= "1" value="Gabriela">Gabriela</option>
               <option  id="2" value="Jardel">Jardel</option>
@@ -23,12 +23,12 @@
        </div> 
         <div>
           <label for="offset" class="texto">Qual a sua senha?</label>
-          <input type="number" id="offset" min="0" max="999"  required oninput="validity.valid||(value='');">
+          <input type="number" id="offset" min="0" max="999" class="texto" required oninput="validity.valid||(value='');">
         </div>
         <div>
           <label for="msgentrada" required class="texto">Digite sua mensagem.</label>
           <div>
-          <input type="text" id="msgentrada" class="msgR">
+          <textarea type="text" id="msgentrada" class="msgR"></textarea>
           <div>
             <button  value="cifrar" class="bt" id="encode">Cifrar</button>
             <button  value="decifrar" class="bt" id="decode">Decifrar</button>
