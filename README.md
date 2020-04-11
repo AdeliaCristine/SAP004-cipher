@@ -47,7 +47,10 @@ Adélia Cristine                                                                
 ## Planejamento e organização para o desenvolvimento do projeto.
 
 
-O planejamento foi baseado seguindo as etapas do fluxograma e em seguida as etapas foram dividas no kanban para melhor visualização.
+O planejamento foi baseado seguindo as etapas do fluxograma e em seguida as etapas foram dividas no kanban para melhor visualização.                                      
+
+
+
 ![Floxograma](https://github.com/AdeliaCristine/SAP004-cipher/blob/master/src/fluxograma.png)
 
 ![kanban](https://github.com/AdeliaCristine/SAP004-cipher/blob/master/src/kanban%20trello.png)
