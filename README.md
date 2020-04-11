@@ -7,7 +7,7 @@ O site e o aplicativo permitem que qualquer pessoa envie mensagens criptografada
 
 Acesse a versão Beta no GitHub Pages:
 
-[www.msgsecreta.com.br] (https://pages.github.com/).
+![www.msgsecreta.com.br] (https://adeliacristine.github.io/SAP004-cipher/src/).
 
 ## Descrição
 
