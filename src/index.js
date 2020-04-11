@@ -48,7 +48,6 @@ function confirmar(event){
   let gabi = document.getElementById("1").value;
   let jardel = document.getElementById("2").value;
   let offset = parseInt(document.getElementById("offset").value);
-  let string = document.getElementById("msgentrada").value;
   document.getElementById("voltar").addEventListener("click",voltar);
   let msgnova = document.getElementById("msgsaida").value;  
  
@@ -79,5 +78,4 @@ function confirmar(event){
     document.getElementById("pessoasCadastradas").value=""; 
     document.getElementById("img").style.display="block";
   }
-
-   console.log();
+  // console.log();
