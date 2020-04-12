@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>MensagemSecreta</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="root">
+     <img src="msg1.png" width="60%" height="60%" id="img">
+    </div>
+    <div>
+      <p id="vamos"></p>
+      <form id="formulario">
+        <div id="box">
+          <label for="pessoasCadastradas" class="texto">Para quem será sua mensagem?</label>
+            <select id="pessoasCadastradas" class="texto">
+              <option value=""></option>
+              <option  id= "1" value="Gabriela">Gabriela</option>
+              <option  id="2" value="Jardel">Jardel</option>
+              <option  id="3"  value="Carla">Carla</option>
+            </select>
+       </div> 
+        <div>
+          <label for="offset" class="texto">Qual a sua senha?</label>
+          <input type="number" id="offset" min="0" max="999" class="texto" required oninput="validity.valid||(value='');">
+        </div>
+        <div>
+          <label for="msgentrada" required class="texto">Digite sua mensagem.</label>
+          <div>
+          <textarea type="text" id="msgentrada" class="msgR"></textarea>
+          <div>
+            <button  value="cifrar" class="bt" id="encode">Cifrar</button>
+            <button  value="decifrar" class="bt" id="decode">Decifrar</button>
+            </div>
+          </div>
+         
+          
+        </div>
+        <div>
+          <label for="msgsaida" class="texto">Aqui está sua mensagem.</label>
+          <div>
+            <textarea id="msgsaida" class="msgR" type ="text"></textarea>
+          </div>
+          <div>
+            <button  value="limpar" class="bt" id="limpar">Limpar</button>
+          </div>
+          <button  value="confirmar" class="bt" id="confirmar">Enviar</button>        
+        </div>    
+               
+      </form>
+      <div id="final">
+        <p id="suamsg" class="texto"></p>
+        <div>
+          <p id="off" class="texto"></p>
+        </div>
+        <div>
+          <p id="cifrada" class="texto"></p>
+        </div>               
+        <button  value="voltar" class="bt" id="voltar">Voltar</button>
+        <div>
+          <p id="decifrada" class="texto"></p>
+        </div>               
+      </div>
+    </div>
+
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
