@@ -37,11 +37,15 @@ Dessa forma garantimos que o MsgSecreta seja usado de forma saudável por nossos
 
 ## Usuários
 
-Todas as pessoas maiores de 18 anos.                                                       Menos apenas com autorização dos pais ou responsáveis.
+Todas as pessoas maiores de 18 anos.
+
+Menos apenas com autorização dos pais ou responsáveis.
 
 ## Auroria
 
-Adélia Cristine                                                                               A partir do projeto Ciphas de Cesas da laboratoria
+Adélia Cristine
+
+A partir do projeto Ciphas de Cesas da laboratoria
 
 
 ## Planejamento e organização para o desenvolvimento do projeto.
@@ -54,6 +58,12 @@ O planejamento foi baseado seguindo as etapas do fluxograma e em seguida as etap
 ![Floxograma](https://github.com/AdeliaCristine/SAP004-cipher/blob/master/src/fluxograma.png)
 
 ![kanban](https://github.com/AdeliaCristine/SAP004-cipher/blob/master/src/kanban%20trello.png)
+
+##Fazendo o deploy
+
+Criei o Girhub pages pelo próprio GitHub.
+
+Indo em Settings no meu projeto.
 
 ***
 
