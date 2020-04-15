@@ -59,7 +59,7 @@ O planejamento foi baseado seguindo as etapas do fluxograma e em seguida as etap
 
 ![kanban](https://github.com/AdeliaCristine/SAP004-cipher/blob/master/src/kanban%20trello.png)
 
-##Fazendo o deploy
+## Fazendo o deploy
 
 Criei o Girhub pages pelo próprio GitHub.
 

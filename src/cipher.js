@@ -12,10 +12,6 @@ const cipher = {
         resultadoCipher += String.fromCharCode((((n-65) + offset) % 26)+65);
       } else if (string.charCodeAt(i)>=97 && string.charCodeAt(i)<=122){
         resultadoCipher += String.fromCharCode((((n-97) + offset) % 26)+97);
-      } else if (string.charCodeAt(i)>=32 && string.charCodeAt(i)<=63){
-      
-        resultadoCipher += String.fromCharCode(((n-32) % 31)+32);
-     
       }else {
         resultadoCipher+= String.fromCharCode(n);
       }
@@ -35,10 +31,6 @@ decode: function(offset, string) {
     resultadoCipher += String.fromCharCode((((n-90) - offset) % 26)+90);
   } else if (string.charCodeAt(i)>=97 && string.charCodeAt(i)<=122){
     resultadoCipher += String.fromCharCode((((n-122) - offset) % 26)+122);
-  } else if (string.charCodeAt(i)>=32 && string.charCodeAt(i)<=63){
-  
-    resultadoCipher += String.fromCharCode(((n-32) % 31)+32);
- 
   }else {
     resultadoCipher+= String.fromCharCode(n);
   }
